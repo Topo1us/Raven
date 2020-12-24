@@ -32,6 +32,7 @@ def net():
 \033[35mверсия 1.7
 \033[32m
 ''')
+    os.system('clear')
 net()
 def v_1():
     def bug_enter(bg_enter):
