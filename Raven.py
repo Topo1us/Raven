@@ -24,6 +24,7 @@ def internal_search_py(internal_search_def):
         print('Raven не удалось найти файл: ',internal_search_py)
 def net():
     try:
+        os.system('clear')
         requests.get("https://pornhub.com", timeout=4)
         print(color_green+'подключенно к сети')
     except:
@@ -33,8 +34,6 @@ def net():
 \033[35mверсия 1.7
 \033[32m
 ''')
-    os.system('clear')
-net()
 def v_1():
     def bug_enter(bg_enter):
 #-H-E-L-P-
@@ -46,7 +45,9 @@ def v_1():
         else:
             os.system(bg_enter)
             print('Внутренние команды.')
-    while True:
+    def enter():
         bug_enter(input('--'+strftime('\033[31m%H:%M')+'\n\033[32mdark@root- '))
-
+    while True:
+        enter()
+net()
 v_1()
