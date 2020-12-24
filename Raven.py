@@ -9,10 +9,11 @@ color_green='\033[32m'
 #error
 error=(color_red+'ошибка доступа.')
 #color_m
+scan_folder=('cd /data/data/com.termux/files/home/Raven/scan')
 def internal_search_cat(internal_search_def):
     try:
         work_file_is_finish=glob(internal_search_def)[0]
-        os.system('cat '+work_file_is_finish)
+        os.system('cat '+work_file_is_finish+'\n')
     except:
         print('Raven не удалось найти файл: ',internal_search_cat)
 def internal_search_py(internal_search_def):
@@ -36,9 +37,9 @@ def net():
 net()
 def v_1():
     def bug_enter(bg_enter):
+#-H-E-L-P-
         if bg_enter=='help' or bg_enter=='h' or bg_enter=='помощь':
             try:
-                os.system('cd&cd Raven&cd Raven_help')
                 internal_search_cat('Raven_help.txt')
             except:
                 print(error)
