@@ -162,8 +162,8 @@ except:
     print('ошибка 101.\nобратитесь к создателю.')
     renable=input('перезапустить voron?\n: ')
     renable=renable.lower()
-   if renable=='y' or renable=='yes' or renable=='д' or renable=='да' or renable=='Y' or renable=='Yes' or renable=='Д' or renable=='Да':
+    if renable=='y' or renable=='yes' or renable=='д' or renable=='да' or renable=='Y' or renable=='Yes' or renable=='Д' or renable=='Да':
         print('voron успешно перезагружен.')
         a_1()
-   elif renable=='n' or renable=='no' or renable=='н' or renable=='нет' or renable=='N' or renable=='No' or renable=='Н' or renable=='Нет':
+    elif renable=='n' or renable=='no' or renable=='н' or renable=='нет' or renable=='N' or renable=='No' or renable=='Н' or renable=='Нет':
         print('voron закрыт.')
