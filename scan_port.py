@@ -24,7 +24,7 @@ def openports(ip):
             sock.settimeout(0.1)
             sock.connect((ip, port))
             print('\033[32mпорт:: %s' % port, ':: открыт')
-            ort_open+=1
+            port_open+=1
             op.append(port)
             sock.close()
         except:
