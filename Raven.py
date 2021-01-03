@@ -55,7 +55,7 @@ v-v         - обновления voron.
 ''')
         elif enter=='port_scan' or enter=='сканер портов' or enter=='port' or enter=='Port_scan' or enter=='Сканер портов' or enter=='Port' or enter=='scan port':
             try:
-                internal_search_cat('scan_port.py')
+                internal_search_py('scan_port.py')
             except:
                 print(error)
         elif enter=='autors' or enter=='Autors':
