@@ -33,7 +33,6 @@ def internal_search_cat(internal_search_def):
         print('Raven не удалось найти файл: ',internal_search_cat)
 def internal_search_py(internal_search_def):
     try:
-        os.system('cd%&cd Raven&cd scan')
         work_file_is_finish=glob(internal_search_def)[0]
         os.system('python '+work_file_is_finish)
     except:
