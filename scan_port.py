@@ -1,8 +1,8 @@
 import socket
 color_red='\033[31m'
 color_green='\033[32m'
-po='порт '
-cl=color_red+' закрыт'
+po='РїРѕСЂС‚ '
+cl=color_red+' Р·Р°РєСЂС‹С‚'
 b=0
 nm=0
 fg=[21, 22, 23, 25,31,41, 43, 45, 53,59, 68, 79, 80, 99, 110, 113, 115, 119, 121, 123, 135, 139, 143, 161, 179, 220, 389, 421, 443, 445, 456, 531, 555, 666, 911,
@@ -23,15 +23,15 @@ def openports(ip):
             sock = socket.socket()
             sock.settimeout(0.1)
             sock.connect((ip, port))
-            print('\033[32mпорт:: %s' % port, ':: открыт')
+            print('\033[32mРїРѕСЂС‚:: %s' % port, ':: РѕС‚РєСЂС‹С‚')
             ort_open+=1
             op.append(port)
             sock.close()
         except:
             port_close+=1
             ops.append(port)
-    print(color_red+'закрытых портов '+str(port_close))
-    print(color_green+'открытых портов '+str(port_open),op)
+    print(color_red+'Р·Р°РєСЂС‹С‚С‹С… РїРѕСЂС‚РѕРІ '+str(port_close))
+    print(color_green+'РѕС‚РєСЂС‹С‚С‹С… РїРѕСЂС‚РѕРІ '+str(port_open),op)
 def openports2():
     ip=input('IP: ')
     port=int(input('PORT: '))
@@ -40,14 +40,14 @@ def openports2():
             sock = socket.socket()
             sock.settimeout(0.2)
             sock.connect((ip, lol))
-            print('\033[32mпорт:: %s' % lol, ':: открыт')
+            print('\033[32mРїРѕСЂС‚:: %s' % lol, ':: РѕС‚РєСЂС‹С‚')
             sock.close()
         except:
-            print('\033[31mпорт:: %s' % lol, ':: закрыт')
-            print('\033[32mготово.')
+            print('\033[31mРїРѕСЂС‚:: %s' % lol, ':: Р·Р°РєСЂС‹С‚')
+            print('\033[32mРіРѕС‚РѕРІРѕ.')
 print('''
-[1] сканирование стандартных портов.
-[2] сканирование определенного порта. 
+[1] СЃРєР°РЅРёСЂРѕРІР°РЅРёРµ СЃС‚Р°РЅРґР°СЂС‚РЅС‹С… РїРѕСЂС‚РѕРІ.
+[2] СЃРєР°РЅРёСЂРѕРІР°РЅРёРµ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РїРѕСЂС‚Р°. 
 
 ''')
 x=input('~ ')
